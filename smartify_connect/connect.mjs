@@ -1,3 +1,4 @@
+import { createRequire } from "node:module"; const require = createRequire(import.meta.url);
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -5148,7 +5149,7 @@ function smartifyUpstream({ url, token, onOpen, onMessage, log = console, socket
 }
 
 // src/main.ts
-var VERSION = "0.3.0";
+var VERSION = "0.3.1";
 var PROD_CONNECT_URL = "wss://4tv64sc7ig.execute-api.ap-south-1.amazonaws.com/live";
 var APP_OPTIONS = "/data/options.json";
 var options = existsSync2(APP_OPTIONS) ? JSON.parse(readFileSync2(APP_OPTIONS, "utf8")) : {};

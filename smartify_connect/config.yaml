@@ -1,6 +1,6 @@
 # Home Assistant App ("add-on"). https://developers.home-assistant.io/docs/add-ons/configuration
 name: Smartify Connect
-version: "0.3.0"
+version: "0.3.1"
 slug: smartify_connect
 description: Control this Home Assistant's devices from the Smartify Home app. Outbound connection only; no ports are opened.
 url: https://github.com/smartifyindia/smartify-connect-ha

@@ -23,6 +23,8 @@ docker run -d --name smartify-connect --restart unless-stopped \
 
 3. Get your pairing code and QR with `docker logs smartify-connect`.
 
+Optional status page: add `-e STATUS_PORT=8099 -p 127.0.0.1:8099:8099` and open `http://localhost:8099`. Publish it to localhost only, because the page shows the pairing code. If you open it by a host name, list that name in `STATUS_HOSTS` (comma-separated).
+
 ## Then, in the Smartify Home app
 
 **Add device → Connect Home Assistant**, scan the QR or type the code, and choose which devices to add.
